@@ -1,80 +1,128 @@
-## 🏛️ System
+💳 CardGuard – Credit Card Fraud Detection System
+📌 System
 
-**Civics Connect** is an AI-driven civic engagement platform that enables citizens to report, track, and resolve public issues efficiently.  
-The system leverages **Machine Learning and Natural Language Processing (NLP)** to automatically classify complaints, prioritize urgency, and assist civic authorities with data-driven insights.
+CardGuard is a machine learning–based fraud detection system designed to identify suspicious and unauthorized credit card transactions in real time.
+The system analyzes transaction patterns using statistical features and ML models to minimize financial loss and enhance transaction security.
 
----
+🚀 Features
 
-## 🚀 Features
+🔍 Real-time fraud detection
 
-- 🤖 AI-based issue classification using NLP  
-- 🗂️ Automatic categorization (Road, Water, Electricity, Sanitation, etc.)  
-- 📸 Image-based issue reporting  
-- 📍 Location tagging using GPS coordinates  
-- 🕒 Real-time issue submission & tracking  
-- 📊 Data-driven insights for civic authorities  
-- 🌐 User-friendly and responsive web interface  
+🤖 ML-based transaction classification
 
----
+⚖️ Class imbalance handling
 
-## 🧠 AI & ML
+📊 Exploratory Data Analysis (EDA)
 
-- TF-IDF Vectorization  
-- Logistic Regression Classifier  
-- NLP-based complaint text analysis  
-- Issue priority prediction (Low / Medium / High)  
-- Image-based issue detection (Computer Vision – optional enhancement)  
+📈 Transaction risk prediction
 
----
+🌐 User-friendly and interactive web interface
 
-## 🛠️ Tech Stack
+🔐 High accuracy fraud identification
 
-### Frontend
-- HTML  
-- CSS  
-- JavaScript  
-- Tailwind CSS  
+🧠 AI & ML
 
-### Backend
-- Python  
-- Flask  
+Logistic Regression
 
-### Machine Learning
-- scikit-learn  
-- pandas  
-- NumPy  
-- Natural Language Processing (NLP)  
+Random Forest Classifier
 
-### Other Tools
-- OpenCV (for image processing)  
-- Pickle (model serialization)  
-- Git & GitHub  
+Feature Scaling (StandardScaler)
 
----
+Class Imbalance Handling (class_weight = balanced)
 
-## 🔄 How It Works
+Model Evaluation using Precision, Recall & F1-score
 
-1. User reports an issue by entering a description and uploading an image  
-2. System captures the user’s location automatically  
-3. NLP model classifies the issue category  
-4. ML model predicts urgency level  
-5. Authorities receive prioritized issues for faster resolution  
+Pipeline-based ML architecture
 
----
+🛠️ Tech Stack
+Frontend
 
-## 🌟 Use Cases
+HTML
 
-- Smart Cities  
-- Municipal Corporations  
-- Public Infrastructure Monitoring  
-- Citizen Engagement Platforms  
+CSS
 
----
+JavaScript
 
-## 🚧 Future Enhancements
+Backend
 
-- Deep learning–based image classification  
-- Admin dashboard with analytics  
-- Mobile application support  
-- Cloud deployment  
-- Notification system for issue updates  
+Python
+
+Flask
+
+Machine Learning
+
+scikit-learn
+
+pandas
+
+NumPy
+
+📁 Project Structure
+card_guard/
+│
+├── backend/
+│   ├── app.py
+│   ├── train_model.py
+│   ├── fraud_model.pkl
+│   ├── scaler.pkl
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── style.css
+│   └── script.js
+│
+├── dataset/
+│   └── creditcard.csv
+│
+├── requirements.txt
+└── README.md
+
+⚙️ How It Works
+
+User enters transaction details (amount, time, etc.).
+
+Input data is scaled and preprocessed.
+
+ML model evaluates transaction patterns.
+
+System predicts Fraud or Legitimate.
+
+Result is displayed instantly on the UI.
+
+📊 Model Workflow
+
+Data Cleaning & Preprocessing
+
+Feature Scaling
+
+Handling Class Imbalance
+
+Model Training & Evaluation
+
+Model Serialization (.pkl)
+
+Real-time Prediction using Flask
+
+🎯 Use Cases
+
+Banking & Financial Institutions
+
+Online Payment Gateways
+
+Credit Card Transaction Monitoring
+
+Academic & Hackathon Projects
+
+🔮 Future Enhancements
+
+📉 Deep Learning-based fraud detection
+
+📊 Advanced fraud analytics dashboard
+
+⏱️ Time-series anomaly detection
+
+🔔 Real-time alerts & notifications
+
+☁️Cloud deployment
