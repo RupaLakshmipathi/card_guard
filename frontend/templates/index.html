@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CardGuard | Fraud Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>💳 CardGuard</h1>
+    <p class="subtitle">AI-Powered Credit Card Fraud Detection</p>
+
+    <form method="POST" onsubmit="showLoader()">
+        <label>Transaction Time</label>
+        <input type="range" min="0" max="100000" name="time" required>
+        
+        <label>Transaction Amount (₹)</label>
+        <input type="number" step="any" name="amount" placeholder="Enter amount" required>
+
+        <button type="submit">Analyze Transaction</button>
+    </form>
+
+    <div id="loader" class="loader"></div>
+
+    {% if prediction %}
+    <div class="result">
+        <h3>{{ prediction }}</h3>
+        <p><strong>Risk Level:</strong> {{ risk_level }}</p>
+
+        <div class="progress">
+            <div class="progress-bar" style="width: {{ risk_score }}%;">
+                {{ risk_score }}%
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+function showLoader() {
+    document.getElementById("loader").style.display = "block";
+}
+</script>
+
+</body>
+</html>
