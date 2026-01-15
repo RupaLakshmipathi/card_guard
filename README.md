@@ -57,28 +57,6 @@ pandas
 
 NumPy
 
-📁 Project Structure
-card_guard/
-│
-├── backend/
-│   ├── app.py
-│   ├── train_model.py
-│   ├── fraud_model.pkl
-│   ├── scaler.pkl
-│
-├── templates/
-│   └── index.html
-│
-├── static/
-│   ├── style.css
-│   └── script.js
-│
-├── dataset/
-│   └── creditcard.csv
-│
-├── requirements.txt
-└── README.md
-
 ⚙️ How It Works
 
 User enters transaction details (amount, time, etc.).
